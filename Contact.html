@@ -15,19 +15,27 @@
   <li><a href="https://twitter.com/MegWritesKinda">Twitter</a></li>
   <li><a href="https://www.facebook.com/profile.php?id=100005451767708">Facebook</a></li>
  </ul>
- <h3>Not on social media? Email me!</h3>
- <!--I am aware that html script can't send an email like this, I just wanted to have a form. Will have to use PHP-->
-      <form action="https://formsubmit.co/meg199616@gmail.com" method="post" enctype="text/plain">
-         Full name:<br><input type="text" name="sname"> <br>
-         Subject:<br><input type="text" name="ssubject"><br>
-		 Email:<br><input type="text" name="semail"><br>
-		 </br>
-		 Message: </br>
-		 <textarea name="textarea" rows="10" cols="40" placeholder="Type your message here!"></textarea>
+ <div class="container">
+  <h3>Not on social media? Email me!</h3>
+  <form target="_blank" action="https://formsubmit.co/meg199616@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
 		</br>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
 		</br>
-         <input type="submit" value="Send">
-      </form>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+  </form>
+</div>
 		</br>
 </header>
 <footer>
